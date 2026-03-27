@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+tests/.pytest_cache/
+
+# VS Code / IDEs
+.vscode/
+.idea/
+
+# Flask / Web
+instance/
+.webassets-cache
+.env
+
+# spaCy models (if manually placed in root)
+models/
+en_core_web_sm/
+
+# Distribution / packages
+dist/
+build/
+*.egg-info/

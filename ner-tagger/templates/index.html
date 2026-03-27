@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NER Tagger | Production Grade</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+<div class="shell">
+
+  <header>
+    <h1>NER Tagger</h1>
+    <span class="badge">spaCy · Local</span>
+  </header>
+
+  <div class="body">
+
+    <!-- ── LEFT: Input ── -->
+    <section class="panel-input">
+      <span class="panel-label">Input Text</span>
+
+      <textarea
+        id="inputText"
+        placeholder="Paste a news article or any paragraph here...&#10;&#10;Example: Apple CEO Tim Cook met with President Biden in Washington D.C. on Tuesday to discuss supply chain policy."
+        spellcheck="false"
+      ></textarea>
+
+      <div class="actions">
+        <button class="btn-analyse" id="analyseBtn">Analyse →</button>
+        <button class="btn-clear" id="clearBtn">Clear</button>
+      </div>
+
+      <div class="status" id="status"></div>
+    </section>
+
+    <!-- ── RIGHT: Results ── -->
+    <section class="panel-results" id="resultsPanel">
+      <div class="placeholder" id="placeholder">
+        <div class="placeholder-icon">⬡</div>
+        <p>Entities will appear here after analysis</p>
+
+        <div class="legend" style="margin-top:16px;">
+          <span class="legend-item"><span class="legend-dot" style="background:var(--person)"></span>Person</span>
+          <span class="legend-item"><span class="legend-dot" style="background:var(--org)"></span>Organisation</span>
+          <span class="legend-item"><span class="legend-dot" style="background:var(--loc)"></span>Location</span>
+          <span class="legend-item"><span class="legend-dot" style="background:var(--date)"></span>Date</span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
