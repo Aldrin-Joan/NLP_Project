@@ -2,8 +2,6 @@
 
 A professional, local-first Named Entity Recognition (NER) and Part-of-Speech (POS) tagging tool. Built with **spaCy** for advanced natural language understanding and **Flask** for a robust, lightweight backend.
 
-![NER Tagger UI](file:///C:/Users/Aldrin%20Joan/.gemini/antigravity/brain/58ac2bae-fc18-4dcd-8ee9-77f4ba39d44b/analysis_results_1774583839879.png)
-
 ## 🚀 Features
 
 - **Advanced Named Entity Recognition**: Automated extraction and categorization of Persons, Organisations, Locations, and Dates.
